@@ -4,6 +4,6 @@ Este repositorio incluye los ejercicios de Maitane Portilla de la primera evalua
 
 Los archivos incluidos son los siguientes:
 - **evaluacion_python_1.ipynb**: contiene los ejercicios de Python
-- 
+- **evaluacion_sql_1_sports_analytics.sql**: contiene los ejercicios de SQL
 
 Además, los descargables del gitbook de la evaluación están descargados en la carpeta 'Datos'.
