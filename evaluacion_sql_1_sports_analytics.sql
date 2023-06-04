@@ -270,13 +270,15 @@ Os dejamos aquí los datos a introducir que necesitareis para insertar los datos
                        
 /*	3. Realizar las siguientes consultas:
 		3.1. Selecciona las victorias máximas y mínimas para cada equipo diferente en la tabla de stats. */
-        	SELECT DISTINCT MAX(w)
-				FROM stats;
-			-- El máximo de victorias para cada equipo diferente es 67 victorias.
- 		
-			SELECT DISTINCT MIN(w)
-				FROM stats;      
-			-- El mínimo de victorias para cada equipo diferente es 15 victorias.
+        	-- La siguiente query obtiene las victorias máximas para cada equipo.
+            SELECT team_id, MAX(w)
+				FROM stats
+                GROUP BY team_id;
+         	
+            -- La siguiente query obtiene las victorias mínimas para cada equipo.		
+			SELECT team_id, MIN(w)
+				FROM stats
+				GROUP BY team_id;      
         
 /*		3.2. Obtén los primeros 10 resultados de la tabla de teams. */
 			-- La siguiente query sería la que nos da los primeros 10 resultados sin especcificar cómo queremos ordenarlos, pero el orden sería en el 
